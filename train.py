@@ -11,10 +11,10 @@ import os.path as osp
 from torch.nn.parallel import DataParallel
 import collections
 import visdom
-from UW.utils.read_file import Config
-from UW.core.Models import build_network
-from UW.core.Datasets import build_dataset, build_dataloader
-from UW.core.Optimizer import build_optimizer, build_scheduler
+from utils.read_file import Config
+from core.Models import build_network
+from core.Datasets import build_dataset, build_dataloader
+from core.Optimizer import build_optimizer, build_scheduler
 from UW.utils import (mkdir_or_exist, get_root_logger,
                       save_epoch, save_latest, save_item,
                       resume, load)
